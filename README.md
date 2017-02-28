@@ -1,2 +1,2 @@
-# cpp-template
-cpp-template
+# template
+template files
