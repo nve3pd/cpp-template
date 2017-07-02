@@ -42,6 +42,10 @@ typedef stack<int> si;
 typedef deque<int> dint;
 
 template <typename T> void print(T x) { std::cout << x << '\n'; }
+template<typename A, size_t N, typename T>
+void Fill(A (&array)[N], const T &val) {
+  std::fill((T*)array, (T*)(array + N), val);
+}
 /*-------------------------------*/
 /* }}} */
 
