@@ -1,6 +1,8 @@
 import java.util.Scanner;
-class Hoge {
-  public static void main(String[] args) {
-    System.out.println("Hoge");
-  }
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+    }
 }
