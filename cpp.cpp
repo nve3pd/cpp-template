@@ -24,11 +24,11 @@ struct Fast {Fast(){std::cin.tie(0);ios::sync_with_stdio(false);}} fast;
 
 //#define int long long
 
-const int INF = 999999999;
-const int MOD = 1e9 + 7;
-const double EPS = 1e9 + 7;
-const double PI = acos(-1);
-const int dx[] = {0, 1, 0, -1}, dy[] = {1, 0, -1, 0};
+constexpr int INF = 999999999;
+constexpr int MOD = 1e9 + 7;
+constexpr double EPS = 1e9 + 7;
+constexpr double PI = acos(-1);
+constexpr int dx[] = {0, 1, 0, -1}, dy[] = {1, 0, -1, 0};
 
 inline int in(){int x;std::cin>>x;return x;}
 
@@ -39,7 +39,15 @@ using vii = vector<vector<int> >;
 using vl = vector<long long>;
 using vp = vector<pint>;
 
-template <typename T> void print(T x) { std::cout << x << '\n'; }
+template <typename T>
+void print(T x) { std::cout << x << '\n'; }
+
+template <typename T, typename... S>
+void print(T f, S... rest) {
+  std::cout << f << " ";
+  print(rest...);
+}
+
 template<typename A, size_t N, typename T>
 void Fill(A (&array)[N], const T &val) {
   std::fill((T*)array, (T*)(array + N), val);
